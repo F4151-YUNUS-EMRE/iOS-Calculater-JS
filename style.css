@@ -1,0 +1,154 @@
+.operationArea {
+  margin-top: 3rem;
+}
+
+table {
+  width: 18rem;
+
+  background-color: rgb(2, 29, 20);
+  color: rgb(251, 251, 251);
+  margin: auto;
+  border-spacing: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+td {
+  width: 20%;
+  height: 3rem;
+
+  background-color: rgb(49, 49, 48);
+
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50%;
+}
+
+.selector {
+  color: black;
+  background-color: rgb(243, 241, 241);
+}
+
+.operationButtons,
+#gleich {
+  background-color: rgb(250, 163, 2);
+}
+
+#zero {
+  border-radius: 4rem;
+}
+
+td:hover {
+  color: black;
+  background-color: rgb(120, 119, 118);
+  transition: ease-in-out 0.3s;
+
+  border-radius: 50%;
+}
+
+#zero:hover {
+  border-radius: 4rem;
+}
+
+#resultArea {
+  height: 25vh;
+  background-color: rgb(19, 18, 18);
+  width: 18rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  box-sizing: border-box;
+
+  text-align: end;
+  padding: 1rem;
+  margin: auto;
+
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+#previousArea {
+  background-color: rgb(41, 40, 40);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.623);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 1rem 1rem 0 0;
+  height: 30%;
+  padding-right: 1rem;
+}
+
+#currentArea {
+  background-color: rgb(41, 40, 40);
+  font-size: 3rem;
+  height: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  table {
+    width: 70%;
+    height: 55vh;
+  }
+
+  td {
+    font-size: 0.8rem;
+  }
+
+  #resultArea {
+    width: 70%;
+  }
+
+  #currentArea {
+    height: 68%;
+    font-size: 2rem;
+  }
+
+  #previousArea {
+    height: 30%;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  table {
+    width: 80%;
+    height: 60vh;
+  }
+
+  #resultArea {
+    width: 80%;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  table {
+    width: 80%;
+    height: 60vh;
+  }
+
+  #resultArea {
+    width: 80%;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  table {
+    width: 100%;
+    height: 60vh;
+  }
+
+  #resultArea {
+    width: 100%;
+    height: 30vh;
+  }
+}

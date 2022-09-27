@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
+    <title>Calcutor</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="operationArea">
+
+            <div id="resultArea">
+                <div id="previousArea"></div>
+                <div id="currentArea"></div>
+            </div>
+
+            <table id="table">
+                <tr>
+                    <td class="selector" id="allDel">AC</td>
+                    <td class="number">-</td>
+                    <td class="selector" id="del">DEL</td>
+                    <td class="operationButtons">/</td>
+
+                </tr>
+                <tr>
+                    <td class="number">7</td>
+                    <td class="number">8</td>
+                    <td class="number">9</td>
+                    <td class="operationButtons">+</td>
+
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="number">5</td>
+                    <td class="number">6</td>
+                    <td class="operationButtons">-</td>
+                </tr>
+                <tr>
+                    <td class="number">1</td>
+                    <td class="number">2</td>
+                    <td class="number">3</td>
+                    <td class="operationButtons">x</td>
+                </tr>
+                <tr>
+                    <td id="zero" class="number" colspan="2">0</td>
+                    <td class="number">.</td>
+                    <td id="result">=</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
