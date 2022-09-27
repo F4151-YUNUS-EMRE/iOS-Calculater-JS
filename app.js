@@ -41,7 +41,7 @@ const selectOperation = (e) => {
 const calculate = (operation) => {
   const currentValue = parseFloat(currentArea.innerText);
   const previousValue = parseFloat(previousArea.innerText.slice(0, -1));
-  // let calcValue;
+
 
   if (operation === '+') {
     calcValue = currentValue + previousValue;
@@ -70,17 +70,7 @@ const result = () => {
   } else if (previousArea.innerText.includes("/")) {
     currentArea.innerText = parseFloat(previousArea.innerText.slice(0, -1)) / parseFloat(currentArea.innerText)
     previousArea.innerText = '';
-  }
-  // if (previousArea.innerText !== '') {
-
-  // currentArea.innerText = parseFloat(previousArea.innerText.slice(0, -1)) * parseFloat(currentArea.innerText)
-  // currentArea.innerText = calcValue
-  // previousArea.innerText = '';
-
-  // } 
-  else {
+  } else {
     calculate();
   }
 };
-
-// currentArea.innerText == '' &&
